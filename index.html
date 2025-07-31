@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="A sample webpage demonstrating semantic HTML5 structure, accessibility, and SEO best practices." />
+  <meta name="keywords" content="HTML5, accessibility, SEO, semantic, web development" />
+  <meta name="author" content="Your Name" />
+  <title>Semantic and Accessible HTML5 Sample</title>
+</head>
+<body>
+  <header role="banner">
+    <h1>Welcome to Semantic HTML5 Example</h1>
+    <nav aria-label="Primary navigation">
+      <ul>
+        <li><a href="#about" accesskey="a">About</a></li>
+        <li><a href="#services" accesskey="s">Services</a></li>
+        <li><a href="#contact" accesskey="c">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main role="main">
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About Us</h2>
+      <p>We are dedicated to creating accessible and SEO-friendly web content using modern HTML5 standards.</p>
+      <img src="team-photo.jpg" alt="Our diverse and friendly team" />
+    </section>
+
+    <section id="services" aria-labelledby="services-heading">
+      <h2 id="services-heading">Our Services</h2>
+      <article aria-labelledby="service1-title">
+        <h3 id="service1-title">Web Development</h3>
+        <p>Custom website development tailored to your business needs.</p>
+      </article>
+      <article aria-labelledby="service2-title">
+        <h3 id="service2-title">Accessibility Audits</h3>
+        <p>Ensuring your site meets all accessibility standards and guidelines.</p>
+      </article>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact Us</h2>
+      <form action="/submit" method="post" aria-label="Contact form">
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" name="name" required aria-required="true" /><br /><br />
+
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" required aria-required="true" /><br /><br />
+
+        <label for="message">Message:</label><br />
+        <textarea id="message" name="message" rows="5" required aria-required="true"></textarea><br /><br />
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; 2025 Your Company Name. All rights reserved.</p>
+    <p><a href="#top">Back to top</a></p>
+  </footer>
+</body>
+</html>
